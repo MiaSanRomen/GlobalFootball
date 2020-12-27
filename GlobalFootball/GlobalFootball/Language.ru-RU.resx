@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="keyA1" xml:space="preserve">
+    <value>Allianz Arena</value>
+  </data>
+  <data name="keyA2" xml:space="preserve">
+    <value>Allianz Stadium</value>
+  </data>
+  <data name="keyA3" xml:space="preserve">
+    <value>Campp Nou</value>
+  </data>
+  <data name="keyAdd" xml:space="preserve">
+    <value>Добавить игрока</value>
+  </data>
+  <data name="keyB1" xml:space="preserve">
+    <value>DVD</value>
+  </data>
+  <data name="keyB2" xml:space="preserve">
+    <value>PSP</value>
+  </data>
+  <data name="keyB3" xml:space="preserve">
+    <value>BVB</value>
+  </data>
+  <data name="keyBackDef" xml:space="preserve">
+    <value>Вернуться к стандартным настройкам</value>
+  </data>
+  <data name="KeyC1" xml:space="preserve">
+    <value>Белый</value>
+  </data>
+  <data name="KeyC2" xml:space="preserve">
+    <value>Голубой</value>
+  </data>
+  <data name="KeyC3" xml:space="preserve">
+    <value>Розовый</value>
+  </data>
+  <data name="keyCamera" xml:space="preserve">
+    <value>Камера</value>
+  </data>
+  <data name="keyCancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="keyClubs" xml:space="preserve">
+    <value>Клубы:</value>
+  </data>
+  <data name="keyCreate" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="keyCups" xml:space="preserve">
+    <value>Чемпионства:</value>
+  </data>
+  <data name="keyDelete" xml:space="preserve">
+    <value>Удалить игрока</value>
+  </data>
+  <data name="keyEngland" xml:space="preserve">
+    <value>Англия</value>
+  </data>
+  <data name="keyFrance" xml:space="preserve">
+    <value>Франция</value>
+  </data>
+  <data name="keyGermany" xml:space="preserve">
+    <value>Германия</value>
+  </data>
+  <data name="keyGetPhoto" xml:space="preserve">
+    <value>Получить фото из:</value>
+  </data>
+  <data name="keyGoals" xml:space="preserve">
+    <value>Голы:</value>
+  </data>
+  <data name="keyItaly" xml:space="preserve">
+    <value>Италия</value>
+  </data>
+  <data name="keyLeagues" xml:space="preserve">
+    <value>Лиги</value>
+  </data>
+  <data name="keyMedia" xml:space="preserve">
+    <value>Хранилище</value>
+  </data>
+  <data name="keyName" xml:space="preserve">
+    <value>Имя:</value>
+  </data>
+  <data name="keyNo" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="keyPlayers" xml:space="preserve">
+    <value>Игроки:</value>
+  </data>
+  <data name="keyPosition" xml:space="preserve">
+    <value>Позиция:</value>
+  </data>
+  <data name="keyPriceChanges" xml:space="preserve">
+    <value>Изменения цены за 5 лет</value>
+  </data>
+  <data name="keyPrices" xml:space="preserve">
+    <value>Цены:</value>
+  </data>
+  <data name="keyPutIn" xml:space="preserve">
+    <value>Введите имя игрока:</value>
+  </data>
+  <data name="keyQuestion" xml:space="preserve">
+    <value>Вы уверенны, что хотите сбросить данные приложения?</value>
+  </data>
+  <data name="keyquestion1" xml:space="preserve">
+    <value>Стадион "Баварии"...</value>
+  </data>
+  <data name="keyquestion2" xml:space="preserve">
+    <value>Кубков ЛЧ у "Барселоны"... </value>
+  </data>
+  <data name="keyquestion3" xml:space="preserve">
+    <value>Иное название "Боруссии"...</value>
+  </data>
+  <data name="keyquestion4" xml:space="preserve">
+    <value>Главный цвет "Реала"...</value>
+  </data>
+  <data name="keyquestion5" xml:space="preserve">
+    <value>Сколько лет Мюллер в "Баварии"?</value>
+  </data>
+  <data name="keyRating" xml:space="preserve">
+    <value>Рейтинг УЕФА:</value>
+  </data>
+  <data name="keyScore" xml:space="preserve">
+    <value>Ваш счёт:</value>
+  </data>
+  <data name="keySearch" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="keySelColor" xml:space="preserve">
+    <value>Выберите цвет:</value>
+  </data>
+  <data name="keySelLanguage" xml:space="preserve">
+    <value>Выберите язык:</value>
+  </data>
+  <data name="keySettings" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="keySoundOff" xml:space="preserve">
+    <value>Выключить звук</value>
+  </data>
+  <data name="keySoundOn" xml:space="preserve">
+    <value>Включить звук</value>
+  </data>
+  <data name="keySpain" xml:space="preserve">
+    <value>Испания</value>
+  </data>
+  <data name="keySurname" xml:space="preserve">
+    <value>Фамилия:</value>
+  </data>
+  <data name="keyWarning" xml:space="preserve">
+    <value>Внимание!</value>
+  </data>
+  <data name="keyWarningLabel" xml:space="preserve">
+    <value>Перезапустите приложение, чтобы применить настройки</value>
+  </data>
+  <data name="keyWarningText" xml:space="preserve">
+    <value>Вам нужно перезапустить приложение</value>
+  </data>
+  <data name="keyYears" xml:space="preserve">
+    <value>Возраст:</value>
+  </data>
+  <data name="keyYes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+</root>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GlobalFootball.LeaguePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid BackgroundColor="#D9D7D7">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="12*" />
+                </Grid.RowDefinitions>
+                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="165">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="leagueImage" />
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Label x:Name="leagueName" Text="LEAGUE"
+                               TextColor="Black" FontSize="Title" 
+                               FontAttributes="Bold" HorizontalOptions="CenterAndExpand"
+                               />
+                        <Grid Grid.Row="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Label Grid.Row="0" x:Name="leagueCountry" 
+                                   Text="Country" 
+                                   FontSize="Medium" FontAttributes="Italic" HorizontalOptions="Fill" HorizontalTextAlignment="Start"/>
+                            <Label Grid.Row="1" x:Name="leagueYear" 
+                                   Text="0000" 
+                                   FontSize="Medium" FontAttributes="Italic" HorizontalTextAlignment="Start"/>
+                        </Grid>
+                    </Grid>
+                </Grid>
+                <Label Grid.Row="1"
+                       TextColor="White" FontSize="Large" 
+                       FontAttributes="Bold" HorizontalOptions="FillAndExpand"
+                       BackgroundColor="Black" x:Name="label"/>
+                <ListView x:Name="TeamlistView" Grid.Row="2" 
+                          BackgroundColor="#D9D7D7" ItemsSource="{Binding Teams}"
+                          RowHeight="60" ItemSelected="OnListViewItemSelected"
+                          ItemTapped="OnListViewItemTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="100"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Grid.Column="0" Grid.RowSpan="2" Source="{Binding Image}"/>
+                                    <Label Grid.Column="1" Text="{Binding Name}" FontSize="Title" VerticalOptions="FillAndExpand" HeightRequest="100"/>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

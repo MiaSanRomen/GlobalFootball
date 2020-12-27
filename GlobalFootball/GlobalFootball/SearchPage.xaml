@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GlobalFootball.SearchPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#D9D7D7">
+            <Grid HeightRequest="100">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="PutIn"/>
+                <Editor Grid.Row="1"  x:Name ="SearchEditor"
+                        TextChanged="EditorTextChanged" FontSize="Title"/>
+            </Grid>
+            <Label x:Name="labelPlayers" FontSize="Title" TextColor="White"/>
+            <ListView x:Name ="PlayersList" BackgroundColor="#D9D7D7" 
+                      ItemsSource="{Binding Players}" RowHeight="60"
+                      ItemSelected="OnListViewItemSelected"
+                      ItemTapped="OnListViewItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="{Binding Name}" FontSize="Title"/>
+                                <Label Grid.Column="1" Text="{Binding Surname}" FontSize="Title"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

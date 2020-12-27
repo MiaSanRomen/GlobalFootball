@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GlobalFootball.QuizPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="labeltitle"  Text="QUIZ"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#D9D7D7">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="question" Text="Here is the question" FontSize="Title"/>
+                <Label Grid.Row="1" x:Name="a1" Text="A." FontSize="Large"/>
+                <Label Grid.Row="2" x:Name="a2" Text="B." FontSize="Large"/>
+                <Label Grid.Row="3" x:Name="a3" Text="C." FontSize="Large"/>
+                
+                <Grid Grid.Row="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="Blackbtn" Clicked="Set1" Grid.Column="1" Text="A" 
+                            BackgroundColor="Black" BorderColor="Yellow" TextColor="White"
+                            FontSize="Title"/>
+                    <Button x:Name="Bluebtn" Clicked="Set2" Grid.Column="3" Text="B" 
+                            BackgroundColor="Black" BorderColor="Yellow" TextColor="White"
+                            FontSize="Title"/>
+                    <Button x:Name="Greenbtn" Clicked="Set3" Grid.Column="5" Text="C" 
+                            TextColor="White" BackgroundColor="Black" BorderColor="Yellow"
+                            FontSize="Title"/>
+                </Grid>
+                
+            </Grid>
+            <Label Grid.Row="1" 
+                   TextColor="White" FontSize="Large" 
+                   FontAttributes="Bold" HorizontalOptions="FillAndExpand"
+                   BackgroundColor="Red" HorizontalTextAlignment="Center" 
+                   x:Name="labelRestart" VerticalOptions="EndAndExpand"
+                   IsVisible="False"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GlobalFootball.AddPlayerPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="PlayerCreated" Order="Primary"
+                     Priority="1" Clicked="ToolbarItemCommand"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#D9D7D7">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="Name"/>
+                <Editor Grid.Row="1"  x:Name ="NameEditor" FontSize="Title"/>
+                <Label Grid.Row="2" x:Name="Surname"/>
+                <Editor Grid.Row="3"  x:Name ="SurnameEditor" FontSize="Title"/>
+                <Label Grid.Row="4" x:Name="Position"/>
+                <Editor Grid.Row="5"  x:Name ="PositionEditor" FontSize="Title"/>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="Years"/>
+                <Editor Grid.Row="1"  x:Name ="YearsEditor" FontSize="Title"/>
+                <Label Grid.Column="1" x:Name="Goals"/>
+                <Editor Grid.Row="1" Grid.Column="1"  x:Name ="GoalsEditor" FontSize="Title"/>
+            </Grid>
+            <Label x:Name="PriceChanges"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="2015" HorizontalOptions="Center"/>
+                <Editor Grid.Row="1" x:Name ="Editor15" FontSize="Title"/>
+                <Label Grid.Column="1" Text="2016" HorizontalOptions="Center"/>
+                <Editor Grid.Column="1" Grid.Row="1" x:Name ="Editor16" FontSize="Title"/>
+                <Label Grid.Column="2" Text="2017" HorizontalOptions="Center"/>
+                <Editor Grid.Column="2" Grid.Row="1" x:Name ="Editor17" FontSize="Title"/>
+                <Label Grid.Row="2"  Text="2018" HorizontalOptions="Center"/>
+                <Editor Grid.Row="3" x:Name ="Editor18" FontSize="Title"/>
+                <Label Grid.Row="2" Grid.Column="1"  Text="2019" HorizontalOptions="Center"/>
+                <Editor Grid.Row="3" Grid.Column="1"  x:Name ="Editor19" FontSize="Title"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:GlobalFootball"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             mc:Ignorable="d"
+             x:Class="GlobalFootball.LeagueChosePage">
+    <StackLayout BackgroundColor="#D9D7D7">
+        <Grid
+            VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="300"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <ListView x:Name="LeaguelistView"
+              BackgroundColor="#D9D7D7"
+              ItemsSource="{Binding Leagues}"
+              RowHeight="60"
+              ItemSelected="OnListViewItemSelected"
+              ItemTapped="OnListViewItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="4*"/>
+                                    <RowDefinition Height="3*"/>
+                                </Grid.RowDefinitions>
+                                <Image Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Source="{Binding Image}"/>
+                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding Name}" FontSize="Title"/>
+                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding Country}"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <forms:AnimationView
+                OnClick="Football_OnClick"
+                BackgroundColor="#D9D7D7"
+                Grid.Row="1"
+                x:Name="football"
+                Animation="football.json"
+                AutoPlay="True" Loop="true"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

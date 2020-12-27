@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GlobalFootball.PlayerPage"
+             xmlns:views="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="DeletePlayer" Order="Secondary"
+                     Priority="1" Clicked="ToolbarItemCommand" CommandParameter="1"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#D9D7D7">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="11*" />
+                </Grid.RowDefinitions>
+                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start" HeightRequest="165">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <ImageButton x:Name="PlayerImage" Clicked="PlayerImage_Clicked"/>
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="3*" />
+                            <RowDefinition Height="2*" />
+                            <RowDefinition Height="2*" />
+                            <RowDefinition Height="2*" />
+                        </Grid.RowDefinitions>
+                        <Label x:Name="PlayerName" Text="Name"
+                               TextColor="Black" FontSize="Title" 
+                               FontAttributes="Bold" HorizontalOptions="CenterAndExpand"
+                               />
+                        <Label Grid.Row="1" x:Name="PlayerPosition" 
+                                   Text="Tropheys" 
+                                   FontSize="Medium" FontAttributes="Italic" HorizontalOptions="Fill" HorizontalTextAlignment="Start"/>
+                        <Label Grid.Row="2" x:Name="PlayerAge" 
+                                   Text="Place" 
+                                   FontSize="Medium" FontAttributes="Italic" HorizontalTextAlignment="Start"/>
+                        <Label Grid.Row="3" x:Name="PlayerGoals" 
+                                   Text="Place" 
+                                   FontSize="Medium" FontAttributes="Italic" HorizontalTextAlignment="Start"/>
+                    </Grid>
+                </Grid>
+                <Label Grid.Row="1"
+                       TextColor="White" FontSize="Large" 
+                       FontAttributes="Bold" HorizontalOptions="FillAndExpand"
+                       BackgroundColor="Black" HorizontalTextAlignment="Center" 
+                       x:Name="label"/>
+                <views:SKCanvasView Grid.Row="2" PaintSurface="OnPainting" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
