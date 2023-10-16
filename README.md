@@ -9,3 +9,5 @@ In development used and realised:
 - app saves settings to JSON fyle
 - 2D graphics
 ```
+
+- Done in 2019
